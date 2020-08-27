@@ -16,9 +16,10 @@ namespace DatingApp.API.Data.Repository
         }
         public async Task<User> Login(string username, string password)
         {
-            string hashed_pass = _context.Users.Where(x => x.Username.ToLower() == username).SingleOrDefault().Password;
-            var val_res = SecurePasswordHasherHelper.Verify(password, hashed_pass);
-            if (!val_res)
+            // ReSharper disable once ReplaceWithSingleCallToSingleOrDefault
+            string hashedPass = _context.Users.Where(x => x.Username.ToLower() == username).SingleOrDefault().Password;
+            var valRes = SecurePasswordHasherHelper.Verify(password, hashedPass);
+            if (!valRes)
             {
                return null;
             }
