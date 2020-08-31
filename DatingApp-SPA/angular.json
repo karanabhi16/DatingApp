@@ -26,7 +26,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": ["node_modules/alertifyjs/build/alertify.min.js",
+              "node_modules/alertifyjs/build/jquery.js",
+              "node_modules/alertifyjs/build/bootstrap.js"]
           },
           "configurations": {
             "production": {
