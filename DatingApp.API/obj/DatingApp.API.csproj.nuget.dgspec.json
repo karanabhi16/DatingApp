@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\LearnAngular\\DatingApp\\DatingApp.API\\DatingApp.API.csproj": {}
+    "D:\\Study\\ASPNET Core and Angular\\0. Learn\\LearnAngular\\DatingApp\\DatingApp.API\\DatingApp.API.csproj": {}
   },
   "projects": {
-    "F:\\LearnAngular\\DatingApp\\DatingApp.API\\DatingApp.API.csproj": {
+    "D:\\Study\\ASPNET Core and Angular\\0. Learn\\LearnAngular\\DatingApp\\DatingApp.API\\DatingApp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\LearnAngular\\DatingApp\\DatingApp.API\\DatingApp.API.csproj",
+        "projectUniqueName": "D:\\Study\\ASPNET Core and Angular\\0. Learn\\LearnAngular\\DatingApp\\DatingApp.API\\DatingApp.API.csproj",
         "projectName": "DatingApp.API",
-        "projectPath": "F:\\LearnAngular\\DatingApp\\DatingApp.API\\DatingApp.API.csproj",
+        "projectPath": "D:\\Study\\ASPNET Core and Angular\\0. Learn\\LearnAngular\\DatingApp\\DatingApp.API\\DatingApp.API.csproj",
         "packagesPath": "C:\\Users\\karan\\.nuget\\packages\\",
-        "outputPath": "F:\\LearnAngular\\DatingApp\\DatingApp.API\\obj\\",
+        "outputPath": "D:\\Study\\ASPNET Core and Angular\\0. Learn\\LearnAngular\\DatingApp\\DatingApp.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\karan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -38,9 +38,17 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[3.1.7, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.1.11, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -77,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

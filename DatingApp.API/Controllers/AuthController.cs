@@ -25,7 +25,7 @@ namespace DatingApp.API.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> Register(User user)
+        public async Task<IActionResult> Register(UserDetail user)
         {
             user.Username = user.Username.ToLower();
             user.Email = user.Email.ToLower();
@@ -39,6 +39,7 @@ namespace DatingApp.API.Controllers
             {
                 return BadRequest("Email already exists.!!!");
             }
+            user.CreateDate = DateTime.Now;
             var createdUser = await _repo.Register(user);
             return StatusCode(201);
         }
